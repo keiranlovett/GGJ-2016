@@ -67,11 +67,6 @@ public class ReactiveObstacle : MonoBehaviour
             isJiggling = true;
         }
 
-        if (isJiggling)
-        {
-            jigglePositive1 = positive1;
-            jigglePositive2 = positive2;
-        }
     }
 
     void JiggleJelly()
@@ -88,7 +83,7 @@ public class ReactiveObstacle : MonoBehaviour
                 else if (jiggleProgress >= 1)   //reset for next case
                 {
                     currentJiggleTarget++;
-                    //jiggleProgress = 0;
+                    jiggleProgress = 0;
                 }
                 break;
             case 2:
@@ -114,7 +109,7 @@ public class ReactiveObstacle : MonoBehaviour
                 else if (jiggleProgress >= 1)   //reset for next case
                 {
                     currentJiggleTarget++;
-                    //jiggleProgress = 0;
+                    jiggleProgress = 0;
                 }
                 break;
             case 4:
