@@ -16,6 +16,7 @@ public class PickupFlag : PickupBase
 	public ActorController m_CarryingActorController;
 	float m_ReturnTimer;
 	Vector3 m_HomePosition;
+	public GameObject target;
 
 	bool withBanana=default (bool);
 	int tempScore;
@@ -32,11 +33,42 @@ public class PickupFlag : PickupBase
 		m_HomePosition = transform.position;
 	}
 
+
+	GameObject GetClosestEnemy (GameObject[] enemies) {
+	    GameObject bestTarget = null;
+	    float closestDistanceSqr = Mathf.Infinity;
+	    Vector3 currentPosition = transform.position;
+	    foreach(GameObject potentialTarget in enemies)
+	    {
+	        Vector3 directionToTarget = potentialTarget.transform.position - currentPosition;
+	        float dSqrToTarget = directionToTarget.sqrMagnitude;
+	        if(dSqrToTarget < closestDistanceSqr)
+	        {
+	            closestDistanceSqr = dSqrToTarget;
+	            bestTarget = potentialTarget;
+	        }
+	    }
+	    return bestTarget;
+	}
+
+
 	void LateUpdate()
 	{
+
+		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Player");
+		target = GetClosestEnemy(enemies);
+		RotateToTarget();
 		HandleFlagDrop();
 		UpdatePosition();
 		UpdateReturnTimer();
+	}
+
+	void RotateToTarget(){
+		//make character point at target
+		Quaternion targetRotation;
+		Vector3 targetPos = target.transform.position;
+		targetRotation = Quaternion.LookRotation(targetPos - new Vector3(transform.position.x,0,transform.position.z));
+		transform.eulerAngles = Vector3.up * Mathf.MoveTowardsAngle(transform.eulerAngles.y,targetRotation.eulerAngles.y,(20 * Time.deltaTime) * 20);
 	}
 
 	/// <summary>
