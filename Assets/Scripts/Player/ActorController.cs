@@ -18,6 +18,7 @@ public class ActorController : MonoBehaviour {
 	public static ActorController actor;
 	Animator animator;
 
+	Vector3 m_HomePosition;
 
 
 	public bool isControlledLocally;
@@ -69,12 +70,27 @@ float x;
 		}
 	}
 
+	void Awake()
+	{
+		m_HomePosition = transform.position;
+	}
+
 	void Start() {
 		animator = this.GetComponent<Animator>();
 		ragdollController = this.transform.root.gameObject.GetComponent<BodyPhysicsController>();
 
 		PhotonView view = this.GetComponent<PhotonView>();
 		isControlledLocally = view.isMine;
+	}
+
+	void OnCollisionEnter(Collision hit)
+	{
+		Debug.Log(hit.gameObject.tag);
+	    if(hit.gameObject.tag == "Kill")
+	    {
+	    	Debug.Log("OUT OF BOUNDS");
+	    	transform.parent.transform.position = m_HomePosition;
+	    }
 	}
 
 	void Update(){
