@@ -185,11 +185,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.31862676
-        functionName: ApplyDamage
-        data: 
-        objectReferenceParameter: {fileID: 109284, guid: dc7a3075cd3684e1dbf938f8fccc049c,
-          type: 2}
+      - time: 0.23432
+        functionName: PlayOneShot
+        data: punch_whoosh_14
+        objectReferenceParameter: {instanceID: 0}
         floatParameter: 10
         intParameter: 0
         messageOptions: 0
