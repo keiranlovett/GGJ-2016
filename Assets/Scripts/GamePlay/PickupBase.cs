@@ -48,6 +48,8 @@ public abstract class PickupBase : MonoBehaviour
 		//As with all RPC methods, we branch between online and offline mode here
 		if( PhotonNetwork.offlineMode == true )
 		{
+
+
 			OnPickup( actor );
 		}
 		else
