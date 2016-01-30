@@ -45,7 +45,8 @@ public class ActorController : MonoBehaviour {
 
 	private RaycastHit hit;
  	private Vector3 dir = Vector3.up;
-
+	
+	public score;
 
 	PhotonView m_View;
 	public PhotonView PhotonView
@@ -62,6 +63,8 @@ public class ActorController : MonoBehaviour {
 
 		PhotonView view = this.GetComponent<PhotonView>();
 		isControlledLocally = view.isMine;
+		
+		score=0;
 	}
 
 	void Update(){
