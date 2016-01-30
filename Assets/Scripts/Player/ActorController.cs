@@ -264,6 +264,7 @@ float x;
 	public void ApplyDamage(float damageValue) {
 		Debug.Log("ApplyDamage:" + damageValue);
 		WeaponDamage = damageValue;
+		LookAtTarget(1);
 		if(meleeHitbox) {
 			meleeHitbox.SetActive(true);
 		}
@@ -377,6 +378,11 @@ float x;
 		isStunned = false;
 	}
 
+	public IEnumerator LookAtTarget(float pauseTime){
+		isStrafing = true;
+		yield return new WaitForSeconds(pauseTime);
+		isStrafing = false;
+	}
 
 	public IEnumerator COSetLayerWeight(float time){
 		animator.SetLayerWeight(1, 1);
@@ -426,13 +432,19 @@ float x;
 			RotateTowardMovementDirection();  //if not strafing, face character along input direction
 		if (isStrafing){  //if strafing, look at the target
 			//make character point at target
-			Quaternion targetRotation;
-			Vector3 targetPos = target.transform.position;
-			targetRotation = Quaternion.LookRotation(targetPos - new Vector3(transform.position.x,0,transform.position.z));
-			transform.eulerAngles = Vector3.up * Mathf.MoveTowardsAngle(transform.eulerAngles.y,targetRotation.eulerAngles.y,(rotationSpeed * Time.deltaTime) * rotationSpeed);
+			RotateToTarget();
 		}
 		GetCameraRelativeMovement();
 	}
+
+	void RotateToTarget(){
+		//make character point at target
+		Quaternion targetRotation;
+		Vector3 targetPos = target.transform.position;
+		targetRotation = Quaternion.LookRotation(targetPos - new Vector3(transform.position.x,0,transform.position.z));
+		transform.eulerAngles = Vector3.up * Mathf.MoveTowardsAngle(transform.eulerAngles.y,targetRotation.eulerAngles.y,(rotationSpeed * Time.deltaTime) * rotationSpeed);
+	}
+
 
 	void GetCameraRelativeMovement(){  //converts control input vectors into camera facing vectors
 		Transform cameraTransform = Camera.main.transform;
