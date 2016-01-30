@@ -228,6 +228,12 @@ float x;
 			StartCoroutine (CODirectionalDash(Input.GetAxis("DashVertical"), Input.GetAxis("DashHorizontal")));
 		}
 
+		if(isControlledLocally) {
+		} else {
+			return;
+		}
+
+
 		UpdateMovement();  //update character position and facing
 	}
 
