@@ -1,22 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 /// <summary>
 /// This is the base class for all game modes.
 /// </summary>
+
+namespace TeamUtility.IO.Examples
+{
 public abstract class GamemodeBase : MonoBehaviour
 {
 	public abstract Gamemode GetGamemodeType();
 
-	public abstract bool IsUsingTeams();
 	public abstract void OnSetup();
 	public abstract void OnTearDown();
 
 	public abstract bool IsRoundFinished();
-//	public abstract Transform GetSpawnPoint( Team team );
 
-	float m_EndRoundTime;
+	public float score = 100;
+
+	public float TotalRoundTime = 1 * 60;
+
 	float m_LastRealTime;
+	public GameObject particle;
+
+
+	public GameObject[] Actors;
+
+	public Text[] ScoreBoard;
 
 	void Update()
 	{
@@ -25,35 +36,53 @@ public abstract class GamemodeBase : MonoBehaviour
 			return;
 		}
 
-		//When the round is finished we want to keep track of time
-		if( IsRoundFinished() == true )
-		{
-			Time.timeScale = 0f;
+		updateScore();
 
-			//Calculate how much time has passed since the last frame and add it onto our total round end time
-			m_EndRoundTime += ( Time.realtimeSinceStartup - m_LastRealTime );
-
-			if( PhotonNetwork.isMasterClient == true )
-			{
-				//We only want the master client to load the next map if at least two seconds have passed
-				//This prevents him from accidentally loading the next map because he presses a button
-				//immediately after the round was finished
-				if( Input.anyKeyDown == true && m_EndRoundTime > 2f )
-				{
-					LoadNextMap();
-				}
-			}
-		}
-		else
-		{
-			Time.timeScale = 1f;
-			m_EndRoundTime = 0f;
-		}
 
 		//Since we are setting Time.timeScale = 0 when a round is finished, we cannot use
 		//Time.deltaTime to calculate how much time has passed since the last frame. So we
 		//store the real time here to be able to calculate the real deltaTime ourselves
 		m_LastRealTime = Time.realtimeSinceStartup;
+
+		if(m_LastRealTime >= TotalRoundTime) {
+			Debug.Log("IT'S THE END");
+			StartCoroutine (EndGame());
+		}
+	}
+
+public void updateScore() {
+
+	    Actors = GameObject.FindGameObjectsWithTag("Player");
+
+
+	for( int i = 0; i < Actors.Length; ++i )
+		{
+
+			Debug.Log(Actors[ i ]);
+
+			//	Actors[ i ].OnSetup();
+
+float ActorScore = Actors[i].gameObject.transform.GetChild(1).gameObject.GetComponent<ActorController>().score;
+    	ScoreBoard[i].text = ActorScore.ToString();
+
+    	if(ActorScore > score){
+    		StartCoroutine (EndGame());
+    	}
+
+
+		}
+
+
+
+
+
+}
+
+	public IEnumerator EndGame(){
+		 particle.GetComponent<ParticleSystem>().enableEmission = true;
+
+		yield return new WaitForSeconds(10f);
+		LoadNextMap();
 	}
 
 	/// <summary>
@@ -69,10 +98,6 @@ public abstract class GamemodeBase : MonoBehaviour
 		PhotonNetwork.room.SetCustomProperties( newProperties );
 	}
 
-	public float GetEndRoundTime()
-	{
-		return m_EndRoundTime;
-	}
 
 	void Awake()
 	{
@@ -111,4 +136,5 @@ public abstract class GamemodeBase : MonoBehaviour
 		//the master client
 		PhotonNetwork.LoadLevel( map.Name );
 	}
+}
 }

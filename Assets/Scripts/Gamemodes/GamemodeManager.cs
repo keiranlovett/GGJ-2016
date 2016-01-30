@@ -13,7 +13,10 @@ public enum Gamemode
 /// The GamemodeManager handles loading and unloading of the required game modes
 /// and provides an easy access to the currently played game mode
 /// </summary>
-public class GamemodeManager : MonoBehaviour
+
+namespace TeamUtility.IO.Examples
+{
+	public class GamemodeManager : MonoBehaviour
 {
 	/// <summary>
 	/// Quick access to the one instance of the GamemodeManager that exists in the scene
@@ -55,7 +58,6 @@ public class GamemodeManager : MonoBehaviour
 
 		InitiateSelectedGamemode();
 
-
 		Debug.Log(MapQueue.GetCurrentMap());
 	}
 
@@ -65,9 +67,7 @@ public class GamemodeManager : MonoBehaviour
 	void FindGamemodes()
 	{
 		m_Gamemodes = new GamemodeBase[ (int)Gamemode.Count ];
-//		m_Gamemodes[ 0 ] = GetComponent<GamemodeCaptureTheFlag>();
-//		m_Gamemodes[ 1 ] = GetComponent<GamemodeDeathmatch>();
-//		m_Gamemodes[ 2 ] = GetComponent<GamemodeTeamDeathmatch>();
+		m_Gamemodes[ 0 ] = GetComponent<GamemodeCaptureTheFlag>();
 	}
 
 	/// <summary>
@@ -123,4 +123,5 @@ public class GamemodeManager : MonoBehaviour
 	{
 		return GetGamemode( SelectedGamemode );
 	}
+}
 }

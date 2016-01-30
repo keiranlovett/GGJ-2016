@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+namespace TeamUtility.IO.Examples
+{
 public class MeleeHitbox : MonoBehaviour
 {
 	public ActorController playerCombat;
@@ -53,4 +54,5 @@ public class MeleeHitbox : MonoBehaviour
 			target.GetComponent<Rigidbody>().AddForce(transform.forward * damageValue * 100);
 		}
 	}
+}
 }

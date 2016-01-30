@@ -193,6 +193,14 @@ ModelImporter:
         floatParameter: 10
         intParameter: 0
         messageOptions: 0
+      - time: 0.19908467
+        functionName: LookAtTarget
+        data: 
+        objectReferenceParameter: {fileID: 109284, guid: c5448ca27b69647d685d33b2c3d98489,
+          type: 2}
+        floatParameter: 1.5
+        intParameter: 0
+        messageOptions: 0
       transformMask:
       - path: 
         weight: 1
