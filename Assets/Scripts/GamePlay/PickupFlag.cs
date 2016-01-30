@@ -5,6 +5,8 @@ using System.Collections;
 /// This class defines the specific pickup behavior for the flag
 /// It also handles flag drops, returns and captures
 /// </summary>
+namespace TeamUtility.IO.Examples
+{
 public class PickupFlag : PickupBase
 {
 	/// <summary>
@@ -215,4 +217,5 @@ public class PickupFlag : PickupBase
 		m_CarryingActorController = actor;
 
 	}
+}
 }

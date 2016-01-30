@@ -10,7 +10,8 @@ public enum Team
 	Blue,
 	None,
 }
-
+namespace TeamUtility.IO.Examples
+{
 public class ActorController : MonoBehaviour {
 
  	public AudioClip[] audioClips;
@@ -119,7 +120,7 @@ float x;
 
 		if(isControlledLocally) {
 			//Get input from controls
-			inputVec = new Vector3(-(Input.GetAxisRaw("Vertical")), 0, Input.GetAxisRaw("Horizontal"));
+			inputVec = new Vector3(-(InputManager.GetAxis("Vertical")), 0, InputManager.GetAxis("Horizontal"));
 		}
 
 		//If we're not dead, we can control the player
@@ -133,7 +134,7 @@ float x;
 				//set that character is moving
 				animator.SetBool("Moving", true);
 				isMoving = true;
-				if (Input.GetKey(KeyCode.LeftShift) || Input.GetAxisRaw("TargetBlock") > .1){  //if strafing
+				if (InputManager.GetKey(KeyCode.LeftShift) || InputManager.GetAxisRaw("TargetBlock") > .1){  //if strafing
 					isStrafing = true;
 					animator.SetBool("Running", false);
 				}
@@ -154,17 +155,17 @@ float x;
 		}
 
 		//JUMP
-		if (Input.GetButtonDown("Jump") && isControlledLocally || inputJump && !isControlledLocally){
+		if (InputManager.GetButtonDown("Vertical") && isControlledLocally || inputJump && !isControlledLocally){
 			if(isStrafing){
 				animator.SetTrigger("JumpTrigger");
-				StartCoroutine(COSetInAir(.3f, .4f));
+				StartCoroutine(COSetInAir(.3f, .2f));
 			}
 			if(isMoving){
 				animator.SetTrigger("JumpForwardTrigger");
-				StartCoroutine(COSetInAir(0f, 4f));
+				StartCoroutine(COSetInAir(0f, .2f));
 			}else{
 		    	animator.SetTrigger("JumpTrigger");
-				StartCoroutine(COSetInAir(.3f, .4f));
+				StartCoroutine(COSetInAir(.3f, .2f));
 			}
 			if(isControlledLocally) {
 				inputJump = true;
@@ -176,7 +177,7 @@ float x;
 		}
 
 		//ATTACK
-		if (Input.GetButtonDown("Fire0") && isControlledLocally || inputAttack0 && !isControlledLocally){
+		if (InputManager.GetButtonDown("Fire0") && isControlledLocally || inputAttack0 && !isControlledLocally){
 			animator.SetTrigger("RangeAttack1Trigger");
 			StartCoroutine (COStunPause(1.2f));
 			if(isControlledLocally) {
@@ -187,7 +188,7 @@ float x;
 				inputAttack0 = false;
 			}
 		}
-		if (Input.GetButtonDown("Fire1") && isControlledLocally || inputAttack1 && !isControlledLocally){
+		if (InputManager.GetButtonDown("Fire1") && isControlledLocally || inputAttack1 && !isControlledLocally){
 			if(!canChain){ //used for characters who can chain attacks to chain to 2nd Attack
 				animator.SetTrigger("Attack1Trigger");
 				StartCoroutine(COChainWindow(.2f, .4f));
@@ -222,7 +223,7 @@ float x;
 			}
 		}
 
-		if (Input.GetButtonDown("Fire2") && isControlledLocally || inputAttack2 && !isControlledLocally){
+		if (InputManager.GetButtonDown("Fire2") && isControlledLocally || inputAttack2 && !isControlledLocally){
 			animator.SetTrigger("MoveAttack1Trigger");
 			StartCoroutine (COStunPause(.9f));
 			if(isControlledLocally) {
@@ -233,7 +234,7 @@ float x;
 				inputAttack2 = false;
 			}
 		}
-		if (Input.GetButtonDown("Fire3") && isControlledLocally || inputAttack3 && !isControlledLocally){
+		if (InputManager.GetButtonDown("Fire3") && isControlledLocally || inputAttack3 && !isControlledLocally){
 			animator.SetTrigger("SpecialAttack1Trigger");
 			StartCoroutine (COStunPause(1.7f));
 			if(isControlledLocally) {
@@ -244,8 +245,8 @@ float x;
 				inputAttack3 = false;
 			}
 		}
-		if(Input.GetAxis("DashVertical") > .5 || Input.GetAxis("DashVertical") < -.5 || Input.GetAxis("DashHorizontal") > .5 || Input.GetAxis("DashHorizontal") < -.5){
-			StartCoroutine (CODirectionalDash(Input.GetAxis("DashVertical"), Input.GetAxis("DashHorizontal")));
+		if(InputManager.GetAxis("DashVertical") > .5 || InputManager.GetAxis("DashVertical") < -.5 || InputManager.GetAxis("DashHorizontal") > .5 || InputManager.GetAxis("DashHorizontal") < -.5){
+			StartCoroutine (CODirectionalDash(InputManager.GetAxis("DashVertical"), InputManager.GetAxis("DashHorizontal")));
 		}
 
 		if(isControlledLocally) {
@@ -365,8 +366,12 @@ float x;
 	public IEnumerator COSetInAir(float timeToStart, float lenthOfTime){
 		yield return new WaitForSeconds(timeToStart);
 		isInAir = true;
+	//	gameObject.GetComponent<SphereCollider>().center = new Vector3(0,2,0);
+
 		yield return new WaitForSeconds(lenthOfTime);
 		isInAir = false;
+	//	gameObject.GetComponent<SphereCollider>().center = new Vector3(0,0,0);
+
 	}
 
 	public IEnumerator COStunPause(float pauseTime){
@@ -456,10 +461,10 @@ float x;
 		// Always orthogonal to the forward vector
 		Vector3 right= new Vector3(forward.z, 0, -forward.x);
 		//directional inputs
-		float v= Input.GetAxisRaw("Vertical");
-		float h= Input.GetAxisRaw("Horizontal");
-		float dv= Input.GetAxisRaw("DashVertical");
-		float dh= Input.GetAxisRaw("DashHorizontal");
+		float v= InputManager.GetAxisRaw("Vertical");
+		float h= InputManager.GetAxisRaw("Horizontal");
+		float dv= InputManager.GetAxisRaw("DashVertical");
+		float dh= InputManager.GetAxisRaw("DashHorizontal");
 		// Target direction relative to the camera
 		targetDirection = h * right + v * forward;
 		// Target dash direction relative to the camera
@@ -473,5 +478,7 @@ float x;
 				transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(targetDirection), Time.deltaTime * rotationSpeed);
 			}
 		}
+
 	}
+}
 }

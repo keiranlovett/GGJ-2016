@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
-
+namespace TeamUtility.IO.Examples
+{
 /// <summary>
 /// All pickups (flag, health) inherit from this class
 /// It defines the basic pickup functionality between the pickup and the actor and passes it on
@@ -79,4 +80,5 @@ public abstract class PickupBase : MonoBehaviour
 			}
 		}
 	}
+}
 }
