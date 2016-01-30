@@ -16,6 +16,16 @@ public class PickupFlag : PickupBase
 	float m_ReturnTimer;
 	Vector3 m_HomePosition;
 
+	bool withBanana=default (bool);
+	int tempScore;
+	int scoreMultiplier;
+
+	void Start()
+	{
+		tempScore=0;
+		scoreMultiplier=6;	//player gains 6 points by holding banana for 1 frame
+	}
+
 	void Awake()
 	{
 		m_HomePosition = transform.position;
@@ -145,6 +155,11 @@ public class PickupFlag : PickupBase
 		m_CarryingActorController = null;
 		transform.position = position;
 		m_ReturnTimer = ReturnTime;
+
+		withBanana=false;
+		IncreaseEnemyScore();
+		tempScore=0;
+
 	}
 
 	[PunRPC]
@@ -158,6 +173,7 @@ public class PickupFlag : PickupBase
 		//Only the master client increases the score and sends the update to everyone else, to make sure the team only gets 1 point
 		if( PhotonNetwork.isMasterClient == true )
 		{
+			withBanana=true;
 			IncreaseEnemyScore();
 		}
 	}
@@ -174,6 +190,12 @@ public class PickupFlag : PickupBase
 	{
 		GamemodeCaptureTheFlag ctfMode = GamemodeManager.CurrentGamemode as GamemodeCaptureTheFlag;
 	//	TODO: MICHELLE CODE HERE, probably maybe?!
+		while(withBanana==true)
+		{
+			tempScore++;
+//			m_CarryingActorController.score+=tempScore*scoreMultiplier;
+			Debug.Log("Event: Scored");
+		}
 	}
 
 	public override bool CanBePickedUpBy( ActorController actor )
