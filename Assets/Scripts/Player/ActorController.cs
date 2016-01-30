@@ -19,6 +19,10 @@ public class ActorController : MonoBehaviour {
 	public static ActorController actor;
 	Animator animator;
 
+	public bool isScoring;
+
+	public int score;
+
 	Vector3 m_HomePosition;
 
 	public bool isControlledLocally;
@@ -94,6 +98,12 @@ public class ActorController : MonoBehaviour {
 	}
 
 	void Update(){
+		if(isScoring) {
+			InvokeRepeating("myScore", 1F, 5F);
+		} else {
+			CancelInvoke("myScore");
+		}
+
 		if (Physics.Raycast(transform.position, -Vector3.up, out hit)) {
 			if(hit.distance > 2) {
 				Debug.Log(hit.distance + "In Air?: " + isInAir);
@@ -330,6 +340,10 @@ public class ActorController : MonoBehaviour {
 	 * HELPER FUNCTIONS
 	**/
 
+
+	public void myScore(){
+		score++;
+	}
 	public IEnumerator CODirectionalDash(float x, float v){
 		//check which way the dash is pressed relative to the character facing
 		float angle = Vector3.Angle(targetDashDirection,-transform.forward);

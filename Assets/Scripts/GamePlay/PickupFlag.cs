@@ -14,7 +14,6 @@ public class PickupFlag : PickupBase
 	/// </summary>
 	public float ReturnTime;
 	public ActorController m_CarryingActorController;
-
 	float m_ReturnTimer;
 	Vector3 m_HomePosition;
 
@@ -131,37 +130,16 @@ public class PickupFlag : PickupBase
 		}
 	}
 
-	void CaptureFlag()
-	{
-
-		Debug.Log("Event Sent: Capture Flag");
-
-		if( PhotonNetwork.offlineMode == true )
-		{
-			OnCapture();
-		}
-		else
-		{
-			if( PhotonNetwork.isMasterClient == true )
-			{
-				PhotonView.RPC( "OnCapture", PhotonTargets.AllBuffered );
-			}
-		}
-	}
-
 	[PunRPC]
 	void OnDrop( Vector3 position )
 	{
 		Debug.Log("Event Received: Drop Flag");
 
+		m_CarryingActorController.isScoring = false;
+
 		m_CarryingActorController = null;
 		transform.position = position;
 		m_ReturnTimer = ReturnTime;
-
-		withBanana=false;
-		IncreaseEnemyScore();
-		tempScore=0;
-
 	}
 
 	[PunRPC]
@@ -172,12 +150,6 @@ public class PickupFlag : PickupBase
 		m_CarryingActorController = null;
 		transform.position = m_HomePosition;
 
-		//Only the master client increases the score and sends the update to everyone else, to make sure the team only gets 1 point
-		if( PhotonNetwork.isMasterClient == true )
-		{
-			withBanana=true;
-			IncreaseEnemyScore();
-		}
 	}
 
 	[PunRPC]
@@ -186,18 +158,6 @@ public class PickupFlag : PickupBase
 		Debug.Log("Event Received: Return Flag");
 
 		transform.position = m_HomePosition;
-	}
-
-	void IncreaseEnemyScore()
-	{
-		GamemodeCaptureTheFlag ctfMode = GamemodeManager.CurrentGamemode as GamemodeCaptureTheFlag;
-	//	TODO: MICHELLE CODE HERE, probably maybe?!
-		while(withBanana==true)
-		{
-			tempScore++;
-//			m_CarryingActorController.score+=tempScore*scoreMultiplier;
-			Debug.Log("Event: Scored");
-		}
 	}
 
 	public override bool CanBePickedUpBy( ActorController actor )
@@ -215,6 +175,7 @@ public class PickupFlag : PickupBase
 	public override void OnPickup( ActorController actor )
 	{
 		m_CarryingActorController = actor;
+		m_CarryingActorController.isScoring = true;
 
 	}
 }

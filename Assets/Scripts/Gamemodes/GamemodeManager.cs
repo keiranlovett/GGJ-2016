@@ -13,7 +13,10 @@ public enum Gamemode
 /// The GamemodeManager handles loading and unloading of the required game modes
 /// and provides an easy access to the currently played game mode
 /// </summary>
-public class GamemodeManager : MonoBehaviour
+
+namespace TeamUtility.IO.Examples
+{
+	public class GamemodeManager : MonoBehaviour
 {
 	/// <summary>
 	/// Quick access to the one instance of the GamemodeManager that exists in the scene
@@ -120,4 +123,5 @@ public class GamemodeManager : MonoBehaviour
 	{
 		return GetGamemode( SelectedGamemode );
 	}
+}
 }
