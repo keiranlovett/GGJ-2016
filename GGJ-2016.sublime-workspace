@@ -1,0 +1,594 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vECTOR",
+				"vector3	ProceduralPropertyType.*"
+			],
+			[
+				"Kno",
+				"knockout"
+			],
+			[
+				"IMPO",
+				"important"
+			],
+			[
+				"Trans",
+				"Transform	[class]"
+			],
+			[
+				"h",
+				"height	Attr"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"un",
+				"underline"
+			],
+			[
+				"drawTools",
+				"drawToolsTEMP"
+			],
+			[
+				"cartographic",
+				"cartographicPosition"
+			],
+			[
+				"imagery",
+				"imageryLayers"
+			],
+			[
+				"setA",
+				"setActive	GameObject.*(value)"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"Json",
+				"JSON"
+			],
+			[
+				"CONSOLE",
+				"console"
+			],
+			[
+				"st",
+				"style	Tag"
+			],
+			[
+				"col",
+				"col-layer-1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 368.0,
+		"last_filter": "insta",
+		"selected_items":
+		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 906.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/keiranlovett/Documents/Projects/Personal/Game Jam",
+		"/Users/keiranlovett/Documents/Projects/Personal/Game Jam/Assets"
+	],
+	"file_history":
+	[
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Scripts/Gamemodes/GamemodeManager.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Scripts/Networking/bs_RoomInfo.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Scripts/Networking/LobbyUI.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Photon Unity Networking/Plugins/PhotonNetwork/PingCloudRegions.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Console.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Scripts/Networking/MultiplayerConnector.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Rubycone/UConsole/Scripts/UConsoleInputField.cs",
+		"/Users/keiranlovett/Downloads/skyarena/Assets/Scripts/GUI/RoomMenuRoomBrowser.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Photon Unity Networking/Plugins/PhotonNetwork/RoomInfo.cs",
+		"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/Scripts/Lobby/bs_RoomInfo.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/Scripts/Networking/RoomInfo.cs",
+		"/Users/keiranlovett/Downloads/LobbyRipFromCorsair/Assets/bs_RoomInfo.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/General/MapQueueEntry.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/General/MapQueue.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Gamemodes/GamemodeManager.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/GUI/RoomMenuBase.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/General/RoomProperty.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/General/ServerOptions.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/GUI/RoomMenuRoomBrowser.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/General/MultiplayerConnector.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/Ship/Ship.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/Chat/ChatHandler.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/Chat/ChatGUI.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Gamemodes/GamemodeBase.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/General/PlayerSpawner.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/GUI/RoomMenu.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/General/Matchmaking.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Lobby/LobbyUI.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Lobby/bs_RoomInfo.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Lobby/bs_LobbyUI.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Photon Unity Networking/Plugins/PhotonNetwork/RoomInfo.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/GUI/RoomMenuCreateRoom.cs",
+		"/Users/keiranlovett/Desktop/bs_LobbyCore.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Lobby/bs_LobbyCore.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Photon Unity Networking/Plugins/PhotonNetwork/ServerSettings.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Lobby/bs_LobbyKeys.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/GUI/MainMenu.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Lobby/bs_LobbyOptions.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Lobby/bs_LobbyHelper.cs",
+		"/Users/keiranlovett/Downloads/New Unity Project/Assets/Scripts/GUI/RoomMenuMatchmaking.cs",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/inspector/demo.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/draw/drawTools.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/draw/drawTools.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/inspector/inspector.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/normalMode.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/selection/pin.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/utilities/uiComponents.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/selection/area.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/layers/layersViewModel.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/selection/info.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/scss/app.scss",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/draw/drawHelper.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/settings/settings.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/settings/settings.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/draw/drawToolsExtension.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/coordinate/coordinate.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/viewerMode.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/scss/_tooltip.scss",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/test/popup.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/pin/Pin.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/css/tooltipster.css",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/afterlogin.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/entitiesList/entities.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/layers/layers.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/layers/layers.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/inspector/inspector.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/viewerMode.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/displayWeatherReport/displayWeatherReport.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/displayFireReport/displayFireReport.html",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/UHUDText/Content/Script/Core/bl_Text.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Core/SmoothFollow.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/UHUDText/bl_TestMouseEvent.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/UHUDText/bl_HUDText.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/UHUDText/Content/Script/Internal/Enum/bl_Guidance.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/UHUDText/Content/Script/Core/bl_HUDText.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/UHUDText/Example/Script/bl_TestMouseEvent.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/UHUDText/bl_HUDText.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Ragdolls/BodyPhysicsController.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Player/ActorController.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Utility/DemoMecanimGUI.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Player/playerRender.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Network/PlayerSync.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/Photon Unity Networking/Plugins/PhotonNetwork/Views/PhotonAnimatorView.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Player/MeleeHitbox.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Player/playerController.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Code/ActorController.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/MeleeHitbox.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/PlayerCombatController.cs",
+		"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/UFPS/Base/Scripts/Gameplay/Combat/vp_Explosion.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/Photon Unity Networking/UtilityScripts/ConnectAndJoinRandom.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Code/SmoothFollow.cs",
+		"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/UFPS/Multiplayer/Scripts/Master/vp_MPPlayerSpawner.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/PhatRobit/ModularRPGCombat/Scripts/WeaponData/MeleeHitbox.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/PhatRobit/ModularRPGCombat/Scripts/Player/PlayerCombatController.cs",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/inspector/viewContainer.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/entitiesList/entities.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/georelation/georelation.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/area/Area.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/viewerObject.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/simulation/Simulation.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/simulation/Simulation.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/area/AreaPop.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/distance/DistanceTools.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/js/vendor/knockout.localStorage.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/viewerMode/georelation/georelation.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/preload.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/js/vendor/knockout.validation.min.js",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Ragdolls/TestPhysMover.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Ragdolls/PhysicsBodyPart.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/PlayerSync.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/Photon Unity Networking/Demos/DemoBoxes/ColorPerPlayer.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/playerController.cs",
+		"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/Scripts/Lobby/bs_LobbyUI.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/PlayerController.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Packages/Photon Unity Networking/Demos/DemoBoxes/DemoBoxesGui.cs",
+		"/Users/keiranlovett/Downloads/Game Sources/ggj_src_SwitchUp/Switch Up! Unity Project/Assets/Scripts/System/GameSetup.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Warrior Pack Bundle 1/Karate Warrior Mecanim Animation Pack/Code/WarriorAnimationDemo.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/Code/WarriorAnimationDemo.cs",
+		"/Users/keiranlovett/Downloads/Game Sources/ggj_src_SwitchUp/Switch Up! Unity Project/Assets/Scripts/System/GameResults.cs",
+		"/Users/keiranlovett/Downloads/Game Sources/ggj_src_SwitchUp/Switch Up! Unity Project/Assets/Scripts/System/GameHUD.cs",
+		"/Users/keiranlovett/Downloads/Game Sources/ggj_src_SwitchUp/Switch Up! Unity Project/Assets/Scripts/System/GameManager.cs",
+		"/Users/keiranlovett/Downloads/ggj_2015_keiranPoC/Assets/Scripts/GameResults.cs",
+		"/Users/keiranlovett/Downloads/InputManager-master/Assets/InputManager/Addons/JoystickMapping/Resources/joystick_mappings/xbox_One_osx.xml",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/layers/demo.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/index.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/page/api/api.html",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/page/vm/navigation/async.js",
+		"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight/page/navigation/structure.html"
+	],
+	"find":
+	{
+		"height": 54.0
+	},
+	"find_in_files":
+	{
+		"height": 94.0,
+		"where_history":
+		[
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/src",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/Scripts,/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/UFPS",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/Scripts",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/Scripts,/Users/keiranlovett/Documents/Projects/Personal/New Unity Project",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/Scripts",
+			"/Users/keiranlovett/Documents/Projects/Personal/MFPTest/Assets",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/UFPS/Base/Scripts,/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/UFPS/Base/Scripts",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/UFPS",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets",
+			"/Users/keiranlovett/Downloads/climateviewer-master",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/ForceX 3D Radar UI/Scripts",
+			"",
+			"/Users/keiranlovett/Documents/Projects/Personal/SkyArena",
+			"/Users/keiranlovett/Documents/Projects/Personal/Romskip/Source/Assets/Packages/BuckeyeStudios",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI",
+			"/Users/keiranlovett/Downloads/nationalmap-neii",
+			"/Users/keiranlovett/Documents/Projects/Clients/Insight Robotics/WebUI/insight",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"GetSpawnPoint",
+			"UpdateRoomList",
+			"ServerOptions",
+			"OnJoinedLobby",
+			"add map to ",
+			"components",
+			"uiComponent",
+			"startDrawing",
+			"info.html",
+			"createPop",
+			"info",
+			"#Info",
+			"Info",
+			"poppin",
+			"inspector",
+			"inspector-content",
+			"getActivePages",
+			"inspector-content",
+			"callpoi",
+			"callarea",
+			"callback",
+			"layerToggle",
+			"layerSources",
+			"COSetInAir",
+			"ToggleGravity",
+			"bl_Guidance",
+			"blockGui",
+			"UpdateMovement",
+			"inputVec",
+			"transform",
+			"COSetInAir",
+			"blockGui",
+			"local",
+			"entities.inspector.",
+			"result",
+			"globalV",
+			"colo",
+			"<<",
+			"color",
+			"Color",
+			"color",
+			"options",
+			"PolylinePrimitive",
+			"material",
+			"m_Lobby",
+			"MyPlayer",
+			"Players",
+			"Color",
+			"ColorProp",
+			"ShowColorLabel",
+			"Colors",
+			"m_GOVelocity",
+			"target",
+			"m_animGO",
+			"LightHitTrigger",
+			"m_getupBackAnimFlag",
+			"ChangeRecoveryToDefaults",
+			"m_getupBackAnimFlag",
+			"weapon",
+			"ObjectiveType",
+			"addIn",
+			"inspectorClass",
+			"pushIndustries",
+			"pushin",
+			"viewer",
+			"element",
+			"viewer",
+			"viewermode-menu",
+			"html",
+			"enti",
+			"pager",
+			"viewContainer",
+			"inspectorGlobal",
+			"element",
+			"data",
+			"/settings",
+			"class",
+			"data-b",
+			"viewer",
+			"params",
+			"applyBindings",
+			"show",
+			"applyBindings",
+			"sourceCache:  true,",
+			"children",
+			"entities_list",
+			"entities",
+			"entities_",
+			"ko",
+			"underscore",
+			"ko",
+			"prett",
+			"popup",
+			"DMS",
+			"screenshotKey",
+			"owl",
+			".history-header",
+			"history-HEADER",
+			"history",
+			"img/",
+			"body",
+			"cus-row",
+			"row",
+			".row",
+			"	",
+			".row",
+			"row",
+			"img/",
+			"script",
+			"<script",
+			"	",
+			"Notify me about this...",
+			"	",
+			"data-bind",
+			"inspectorHTML",
+			"icon bar",
+			"inspector_button",
+			"measurementPrefDistance",
+			"tooltips",
+			"createTooltip",
+			"username",
+			"knockout.validation.min",
+			"knockout.validation",
+			"abide",
+			"li",
+			".inspector-wrapper .tabs",
+			"dms",
+			"serverInfo"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"viewer-content",
+			"entities.",
+			"Player",
+			"PlayerProp",
+			"",
+			"knockout",
+			"../content/project_romskip/",
+			"row",
+			"cus-row",
+			"",
+			"../content/project_romskip/",
+			"",
+			"inlineHTML",
+			"",
+			"position",
+			"",
+			"helper/calculation",
+			"",
+			"new calculation.method(",
+			"",
+			"Objective",
+			"",
+			"chart",
+			"m_IsControlled",
+			"rm_",
+			"rm_FPInputExtended",
+			"m_WeaponIndex",
+			"src/Core/",
+			"graphImageryProvider",
+			"layerID",
+			"layerDescription",
+			"layerURL",
+			"layerRenderType",
+			"layerName",
+			"layerSource",
+			"layerName",
+			"0",
+			"_HUDMgr",
+			"",
+			"HUDMGR",
+			"bs_RoomCore",
+			"layersViewModel",
+			"layersActive",
+			"layerUserCustom",
+			"layerUnloadSource",
+			"layerLoadSource",
+			"knockout",
+			"knockout.",
+			"theme-c"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.variable_get":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "GGJ-2016.sublime-project",
+	"replace":
+	{
+		"height": 104.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 335.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

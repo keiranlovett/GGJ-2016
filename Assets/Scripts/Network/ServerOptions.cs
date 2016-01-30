@@ -14,8 +14,11 @@ public class ServerOptions
 
 	public static string[] AvailableMaps = new string[]
 	{
-		"Greenlands",
-		"City"
+		"alpha",
+		"bravo",
+		"charlie",
+		"delta",
+		"foxtrot"
 	};
 
 	public static Gamemode[] AvailableModes = new Gamemode[]
