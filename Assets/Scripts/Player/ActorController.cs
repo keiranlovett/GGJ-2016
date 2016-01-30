@@ -46,7 +46,7 @@ public class ActorController : MonoBehaviour {
 	private RaycastHit hit;
  	private Vector3 dir = Vector3.up;
 	
-	public score;
+	public int score;
 
 	PhotonView m_View;
 	public PhotonView PhotonView
