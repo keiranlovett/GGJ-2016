@@ -13,8 +13,12 @@ public enum Team
 
 public class ActorController : MonoBehaviour {
 
+ 	public AudioClip[] audioClips;
+
 	public static ActorController actor;
 	Animator animator;
+
+
 
 	public bool isControlledLocally;
 
@@ -254,6 +258,17 @@ float x;
 	}
 
 
+	void PlayOneShotRandom(){
+		AudioClip audio = audioClips[Random.Range(0,audioClips.Length)];
+		GetComponent<AudioSource>().PlayOneShot(audio);
+	}
+
+	void PlayOneShot(string clip){
+		AudioClip audio = Resources.Load<AudioClip>("Sounds/"+clip);
+		GetComponent<AudioSource>().PlayOneShot(audio);
+	}
+
+
 	/**
 	 * NETWORK FUNCTIONS
 	**/
@@ -436,5 +451,4 @@ float x;
 			}
 		}
 	}
-
 }
