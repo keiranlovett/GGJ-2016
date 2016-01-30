@@ -1,7 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Available teams to choose from
+/// </summary>
+public enum Team
+{
+	Red,
+	Blue,
+	None,
+}
+
 public class ActorController : MonoBehaviour {
+
+	public static ActorController actor;
+
 	Animator animator;
 
 	public bool isControlledLocally;
@@ -32,6 +45,16 @@ public class ActorController : MonoBehaviour {
 
 	private RaycastHit hit;
  	private Vector3 dir = Vector3.up;
+
+
+	PhotonView m_View;
+	public PhotonView PhotonView
+	{
+		get
+		{
+			return Helper.GetCachedComponent<PhotonView>( gameObject, ref m_View );
+		}
+	}
 
 	void Start() {
 		animator = this.GetComponent<Animator>();

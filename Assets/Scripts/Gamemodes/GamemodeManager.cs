@@ -65,9 +65,7 @@ public class GamemodeManager : MonoBehaviour
 	void FindGamemodes()
 	{
 		m_Gamemodes = new GamemodeBase[ (int)Gamemode.Count ];
-//		m_Gamemodes[ 0 ] = GetComponent<GamemodeCaptureTheFlag>();
-//		m_Gamemodes[ 1 ] = GetComponent<GamemodeDeathmatch>();
-//		m_Gamemodes[ 2 ] = GetComponent<GamemodeTeamDeathmatch>();
+		m_Gamemodes[ 0 ] = GetComponent<GamemodeCaptureTheFlag>();
 	}
 
 	/// <summary>
