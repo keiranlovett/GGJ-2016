@@ -32,6 +32,11 @@ public RoomInfo globalRoomInfo;
 
 		RoomNameUI.text = roomInfo.name.ToString() + "["+ mode.ToString() + "]";
 
+		MapNameUI.text = map.ToString();
+
+		MaxPlayerUI.text = mode.ToString();
+
+
 		if (roomInfo.playerCount >= roomInfo.maxPlayers)
 		{
 			ButtonText.text = "Full";

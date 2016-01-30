@@ -29,10 +29,11 @@ public class LobbyUI : MonoBehaviour {
 	public Image MapPreviewImage = null;
 	public Text GameModeNameText = null;
 	public Transform GamePanel = null;
+	public GameObject GOGameInfo;
 
 	[Header("Room Settings")]
 	public Gamemode m_SelectedMode = Gamemode.CaptureTheFlag;
-	public string m_SelectedMap = "Greenlands";
+	public string m_SelectedMap = "Alpha";
 	public int m_SelectedTime = 2;
 	public int m_SelectedPlayers = 2;
 
@@ -127,6 +128,7 @@ public class LobbyUI : MonoBehaviour {
 	void Start()
 	{
 
+		AddMapToQueue("Alpha", Gamemode.CaptureTheFlag);
 		//makes sure that the header is not displayed unless you have a username
 		LobbyHeader.SetActive (false);
 		ChangeWindow(0);
@@ -263,8 +265,9 @@ public class LobbyUI : MonoBehaviour {
 		//Update List
 		for( int i = 0; i < m_MapQueue.Count; ++i ) {
 			MapQueueEntry entry = m_MapQueue[ i ];
-			GameObject r = Instantiate(GORoomInfo) as GameObject;
-//			r.GetComponent<bs_RoomInfo>().GetInfo( entry.Name + " [" + GetGamemodeShortform( entry.Mode ) + "]");
+			GameObject r = Instantiate(GOGameInfo) as GameObject;
+
+		//	r.GetComponent<bs_GameInfo>().GetInfo(entry.Name.ToString() + " [" + GetGamemodeShortform( entry.Mode ).ToString() + "]".ToString() );
 			r.transform.SetParent(GamePanel, false);
 			CacheRoomList.Add(r);
 
@@ -392,7 +395,7 @@ public class LobbyUI : MonoBehaviour {
 		}
 
 		m_SelectedTime = ServerOptions.RoomTime[m_TimeCount];
-		TimeText.text = m_SelectedTime.ToString();
+		TimeText.text = "Time: "+   m_SelectedTime.ToString();
 
 	}
 	/// <summary>
@@ -495,7 +498,7 @@ public class LobbyUI : MonoBehaviour {
 			}
 		}
 		m_SelectedMode = ServerOptions.AvailableModes[m_ModeCount];
-		MapNameText.text = m_SelectedMode.ToString();
+		MapNameText.text = "Mode: "+  m_SelectedMode.ToString();
 	}
 
 	public void AddGame() {

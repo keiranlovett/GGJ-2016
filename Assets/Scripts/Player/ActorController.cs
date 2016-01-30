@@ -59,8 +59,8 @@ public class ActorController : MonoBehaviour {
  	public bool inputAttack2;
  	public bool inputAttack3;
   	public bool inputLightHit;
-float z;
-float x;
+	float z;
+	float x;
 
  	PhotonView m_View;
 	public PhotonView PhotonView
