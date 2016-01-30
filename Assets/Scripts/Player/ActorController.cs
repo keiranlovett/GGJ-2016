@@ -47,14 +47,14 @@ public class ActorController : MonoBehaviour {
  	private Vector3 dir = Vector3.up;
 
  	//Networked Variables
- 	public Vector2 inputPos;
  	public bool inputJump;
  	public bool inputAttack0;
  	public bool inputAttack1;
  	public bool inputAttack2;
  	public bool inputAttack3;
   	public bool inputLightHit;
-
+float z;
+float x;
 
  	PhotonView m_View;
 	public PhotonView PhotonView
@@ -94,30 +94,22 @@ public class ActorController : MonoBehaviour {
 		target = GetClosestEnemy(enemies);
 
 		//Normalise back to 0
-		inputVec = new Vector3(0,0,0);
+		//inputVec = new Vector3(0,0,0);
+
+
+		if(isControlledLocally) {
+			//Get input from controls
+			inputVec = new Vector3(-(Input.GetAxisRaw("Vertical")), 0, Input.GetAxisRaw("Horizontal"));
+		}
 
 		//If we're not dead, we can control the player
 		//Anything locally controlled goes here!
-		if(isControlledLocally && !dead) {
-
-			animator.SetBool("Block", false);
-
-			//Get input from controls
-			float z = Input.GetAxisRaw("Horizontal");
-			float x = -(Input.GetAxisRaw("Vertical"));
-			inputPos = new Vector3(z,x);
-
-			if(!isControlledLocally) {
-				inputVec = new Vector3(inputPos.x, 0, inputPos.y);
-			} else {
-				inputVec = new Vector3(x, 0, z);
-			}
-
+		if(!dead) {
 			//Apply inputs to animator
-			animator.SetFloat("Input X", z);
-			animator.SetFloat("Input Z", -(x));
+			animator.SetFloat("Input X", inputVec.z);
+			animator.SetFloat("Input Z", -(inputVec.x));
 
-			if (x > .1 || x < -.1 || z > .1 || z < -.1){  //if there is some input (account for controller deadzone)
+			if (inputVec.x > .1 || inputVec.x < -.1 || inputVec.z > .1 || inputVec.z < -.1){  //if there is some input (account for controller deadzone)
 				//set that character is moving
 				animator.SetBool("Moving", true);
 				isMoving = true;
@@ -137,7 +129,6 @@ public class ActorController : MonoBehaviour {
 				isMoving = false;
 			}
 		} else {
-			animator.SetBool("Block", true);
 			animator.SetFloat("Input X", 0);
 			animator.SetFloat("Input Z", -0);
 		}
@@ -270,12 +261,7 @@ public class ActorController : MonoBehaviour {
 		{
 			Debug.Log("WRITE");
 
-		// We own this player: send the others our data
-      //      stream.SendNext(transform.position);
-       //     stream.SendNext(transform.rotation);
-
-            stream.SendNext(inputPos);
-
+			// We own this player: send the others our data
 			stream.SendNext(inputJump);
 			inputJump = false;
 
@@ -289,11 +275,6 @@ public class ActorController : MonoBehaviour {
 		else
 		{
 			Debug.Log("READ");
-
-	//		this.transform.position = (Vector3) stream.ReceiveNext();
-      //  	this.transform.rotation = (Quaternion) stream.ReceiveNext();
-
-        	inputPos = (Vector2)stream.ReceiveNext();
 
 			inputJump = (bool)stream.ReceiveNext();
 			inputAttack0 = (bool)stream.ReceiveNext();
