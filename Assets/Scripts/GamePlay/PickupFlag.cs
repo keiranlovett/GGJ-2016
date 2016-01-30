@@ -101,6 +101,9 @@ public class PickupFlag : PickupBase
 			return;
 		}
 
+	transform.LookAt(m_CarryingActorController.transform);
+   	transform.Translate(5*Vector3.forward*Time.deltaTime);
+
 	//	transform.position = m_CarryingActorController.transform.position;
 	}
 
