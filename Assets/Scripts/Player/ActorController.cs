@@ -21,7 +21,6 @@ public class ActorController : MonoBehaviour {
 
 	Vector3 m_HomePosition;
 
-
 	public bool isControlledLocally;
 
 	public GameObject target;
@@ -107,15 +106,19 @@ public class ActorController : MonoBehaviour {
 
 		if(ragdollController.currState_ == BodyPhysicsController.State.FALLING) {
 			dead = true;
+							animator.SetBool("Block", true);
+
 		} else {
 			dead = false;
+										animator.SetBool("Block", false);
+
 		}
 
 		GameObject[] enemies = GameObject.FindGameObjectsWithTag("Player");
 		target = GetClosestEnemy(enemies);
 
 		//Normalise back to 0
-		//inputVec = new Vector3(0,0,0);
+		inputVec = new Vector3(0,0,0);
 
 
 		if(isControlledLocally) {
@@ -150,12 +153,14 @@ public class ActorController : MonoBehaviour {
 				isMoving = false;
 			}
 		} else {
+			inputVec = new Vector3(0,0,0);
+
 			animator.SetFloat("Input X", 0);
 			animator.SetFloat("Input Z", -0);
 		}
 
 		//JUMP
-		if (InputManager.GetButtonDown("Vertical") && isControlledLocally || inputJump && !isControlledLocally){
+		if (InputManager.GetButtonDown("Jump") && isControlledLocally || inputJump && !isControlledLocally){
 			if(isStrafing){
 				animator.SetTrigger("JumpTrigger");
 				StartCoroutine(COSetInAir(.3f, .2f));
@@ -254,8 +259,8 @@ public class ActorController : MonoBehaviour {
 			return;
 		}
 
-
 		UpdateMovement();  //update character position and facing
+
 	}
 
 	/**

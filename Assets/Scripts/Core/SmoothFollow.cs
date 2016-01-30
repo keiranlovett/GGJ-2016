@@ -32,27 +32,6 @@ public class SmoothFollow : MonoBehaviour
 		velocity = new Vector3(0.5f, 0.5f, 0.5f);
 	}
 
-	void Update()
-	{
-		if(hudActive)
-		{
-			if (Input.GetKeyDown(KeyCode.H))
-			{
-				hudElements.SetActive (false);
-				hudActive = false;
-			}
-
-		}
-		else
-		{
-			if (Input.GetKeyDown(KeyCode.H))
-			{
-				hudElements.SetActive (true);
-				hudActive = true;
-			}
-		}
-	}
-
 	// ReSharper disable UnusedMember.Local
 	private void LateUpdate()
 		// ReSharper restore UnusedMember.Local
