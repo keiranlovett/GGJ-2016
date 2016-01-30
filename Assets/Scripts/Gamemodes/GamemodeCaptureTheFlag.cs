@@ -12,6 +12,9 @@ public class GamemodeCaptureTheFlag : GamemodeBase
 	public const float TotalRoundTime = 5 * 60;
     private PhotonAnimatorView m_AnimatorView;  // local animatorView. set when we create our character in CreatePlayerObject()
 
+    public Transform[] spawnPoints;
+
+
 
 	/// <summary>
 	/// How many captures are needed till one team wins?
@@ -31,18 +34,13 @@ public class GamemodeCaptureTheFlag : GamemodeBase
 
 	 private void CreatePlayerObject()
     {
-        Vector3 position = new Vector3( -2, 0, 0 );
-        position.x += Random.Range( -3f, 3f );
-        position.z += Random.Range( -4f, 4f );
-
+       Vector3 position = spawnPoints[PhotonNetwork.playerList.Length-1].transform.position;
         GameObject newPlayerObject = PhotonNetwork.Instantiate( "Actor", position, Quaternion.identity, 0 );
 
         PhotonView pv = PhotonView.Get(newPlayerObject);
         if (pv.isMine) {
             newPlayerObject.name = "Actor (Local)";
             Camera.main.gameObject.GetComponent<SmoothFollow>().target = newPlayerObject.transform.Find("ActorController");
-        } else {
-            newPlayerObject.name = "Actor (Network)";
         }
 
         m_AnimatorView = newPlayerObject.GetComponent<PhotonAnimatorView>();

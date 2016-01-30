@@ -15,6 +15,8 @@ public abstract class GamemodeBase : MonoBehaviour
 	public abstract bool IsRoundFinished();
 //	public abstract Transform GetSpawnPoint( Team team );
 
+	public int TotalFlagCaptures;
+
 	float m_EndRoundTime;
 	float m_LastRealTime;
 

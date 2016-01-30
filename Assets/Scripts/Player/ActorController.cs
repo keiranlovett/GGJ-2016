@@ -257,7 +257,6 @@ float x;
 		Debug.Log("TakeDamage:" + damageValue);
 	}
 
-
 	void PlayOneShotRandom(){
 		AudioClip audio = audioClips[Random.Range(0,audioClips.Length)];
 		GetComponent<AudioSource>().PlayOneShot(audio);
@@ -280,8 +279,6 @@ float x;
 		//all the data separated into their respective components
 		if( stream.isWriting == true )
 		{
-			Debug.Log("WRITE");
-
 			// We own this player: send the others our data
 			stream.SendNext(inputJump);
 			inputJump = false;
@@ -295,8 +292,6 @@ float x;
 		}
 		else
 		{
-			Debug.Log("READ");
-
 			inputJump = (bool)stream.ReceiveNext();
 			inputAttack0 = (bool)stream.ReceiveNext();
 			inputAttack1 = (bool)stream.ReceiveNext();
