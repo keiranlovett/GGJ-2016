@@ -10,6 +10,7 @@ public class GamemodeCaptureTheFlag : GamemodeBase
 	/// How long is one match?
 	/// </summary>
 	public const float TotalRoundTime = 5 * 60;
+    private PhotonAnimatorView m_AnimatorView;  // local animatorView. set when we create our character in CreatePlayerObject()
 
 
 	/// <summary>
@@ -17,25 +18,35 @@ public class GamemodeCaptureTheFlag : GamemodeBase
 	/// </summary>
 	public const int TotalFlagCaptures = 5;
 
-	/// <summary>
-	/// The spawn point for the red team
-	/// </summary>
-	public Transform RedSpawnPoint;
-
-	/// <summary>
-	/// The spawn point for the blue team
-	/// </summary>
-	public Transform BlueSpawnPoint;
-
 	public override void OnSetup()
 	{
 		Debug.Log("START ROUND");
-
 		if( PhotonNetwork.isMasterClient == true )
 		{
 			SetRoundStartTime();
 		}
+
+        CreatePlayerObject();
 	}
+
+	 private void CreatePlayerObject()
+    {
+        Vector3 position = new Vector3( -2, 0, 0 );
+        position.x += Random.Range( -3f, 3f );
+        position.z += Random.Range( -4f, 4f );
+
+        GameObject newPlayerObject = PhotonNetwork.Instantiate( "Actor", position, Quaternion.identity, 0 );
+
+        PhotonView pv = PhotonView.Get(newPlayerObject);
+        if (pv.isMine) {
+            newPlayerObject.name = "Actor (Local)";
+            Camera.main.gameObject.GetComponent<SmoothFollow>().target = newPlayerObject.transform.Find("ActorController");
+        } else {
+            newPlayerObject.name = "Actor (Network)";
+        }
+
+        m_AnimatorView = newPlayerObject.GetComponent<PhotonAnimatorView>();
+    }
 
 	public override void OnTearDown()
 	{

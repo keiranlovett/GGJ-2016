@@ -176,9 +176,6 @@ public class PickupFlag : PickupBase
 	//	TODO: MICHELLE CODE HERE, probably maybe?!
 	}
 
-
-
-
 	public override bool CanBePickedUpBy( ActorController actor )
 	{
 
@@ -193,7 +190,6 @@ public class PickupFlag : PickupBase
 
 	public override void OnPickup( ActorController actor )
 	{
-
 		m_CarryingActorController = actor;
 
 	}

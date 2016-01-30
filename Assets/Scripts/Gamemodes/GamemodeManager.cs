@@ -55,7 +55,6 @@ public class GamemodeManager : MonoBehaviour
 
 		InitiateSelectedGamemode();
 
-
 		Debug.Log(MapQueue.GetCurrentMap());
 	}
 
