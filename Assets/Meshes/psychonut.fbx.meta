@@ -1,0 +1,914 @@
+fileFormatVersion: 2
+guid: 11c6f3b00f27843edb15154d5f0a755c
+timeCreated: 1454223062
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: group
+    100002: group1
+    100004: phyconut_0003:Actors:_UNKNOWN_REF_NODE_fosterParent1
+    100006: phyconut_0003:Actors:B_Head
+    100008: phyconut_0003:Actors:B_L_Calf
+    100010: phyconut_0003:Actors:B_L_Clavicle
+    100012: phyconut_0003:Actors:B_L_Finger0
+    100014: phyconut_0003:Actors:B_L_Finger01
+    100016: phyconut_0003:Actors:B_L_Finger02
+    100018: phyconut_0003:Actors:B_L_Finger1
+    100020: phyconut_0003:Actors:B_L_Finger11
+    100022: phyconut_0003:Actors:B_L_Finger12
+    100024: phyconut_0003:Actors:B_L_Finger2
+    100026: phyconut_0003:Actors:B_L_Finger21
+    100028: phyconut_0003:Actors:B_L_Finger22
+    100030: phyconut_0003:Actors:B_L_Finger3
+    100032: phyconut_0003:Actors:B_L_Finger31
+    100034: phyconut_0003:Actors:B_L_Finger32
+    100036: phyconut_0003:Actors:B_L_Finger4
+    100038: phyconut_0003:Actors:B_L_Finger41
+    100040: phyconut_0003:Actors:B_L_Finger42
+    100042: phyconut_0003:Actors:B_L_Foot
+    100044: phyconut_0003:Actors:B_L_Forearm
+    100046: phyconut_0003:Actors:B_L_ForeArmTwist
+    100048: phyconut_0003:Actors:B_L_Hand
+    100050: phyconut_0003:Actors:B_L_Thigh
+    100052: phyconut_0003:Actors:B_L_Toe0
+    100054: phyconut_0003:Actors:B_L_UpperArm
+    100056: phyconut_0003:Actors:B_Neck
+    100058: phyconut_0003:Actors:B_Pelvis
+    100060: phyconut_0003:Actors:B_R_Calf
+    100062: phyconut_0003:Actors:B_R_Clavicle
+    100064: phyconut_0003:Actors:B_R_Finger0
+    100066: phyconut_0003:Actors:B_R_Finger01
+    100068: phyconut_0003:Actors:B_R_Finger02
+    100070: phyconut_0003:Actors:B_R_Finger1
+    100072: phyconut_0003:Actors:B_R_Finger11
+    100074: phyconut_0003:Actors:B_R_Finger12
+    100076: phyconut_0003:Actors:B_R_Finger2
+    100078: phyconut_0003:Actors:B_R_Finger21
+    100080: phyconut_0003:Actors:B_R_Finger22
+    100082: phyconut_0003:Actors:B_R_Finger3
+    100084: phyconut_0003:Actors:B_R_Finger31
+    100086: phyconut_0003:Actors:B_R_Finger32
+    100088: phyconut_0003:Actors:B_R_Finger4
+    100090: phyconut_0003:Actors:B_R_Finger41
+    100092: phyconut_0003:Actors:B_R_Finger42
+    100094: phyconut_0003:Actors:B_R_Foot
+    100096: phyconut_0003:Actors:B_R_Forearm
+    100098: phyconut_0003:Actors:B_R_ForeArmTwist
+    100100: phyconut_0003:Actors:B_R_Hand
+    100102: phyconut_0003:Actors:B_R_Thigh
+    100104: phyconut_0003:Actors:B_R_Toe0
+    100106: phyconut_0003:Actors:B_R_UpperArm
+    100108: phyconut_0003:Actors:B_Spine
+    100110: phyconut_0003:Actors:B_Spine1
+    100112: phyconut_0003:Actors:B_Spine2
+    100114: phyconut_0003:Actors:Motion
+    100116: phyconut_0003:group1
+    100118: //RootNode
+    100120: pyconut24:polySurface1
+    400000: group
+    400002: group1
+    400004: phyconut_0003:Actors:_UNKNOWN_REF_NODE_fosterParent1
+    400006: phyconut_0003:Actors:B_Head
+    400008: phyconut_0003:Actors:B_L_Calf
+    400010: phyconut_0003:Actors:B_L_Clavicle
+    400012: phyconut_0003:Actors:B_L_Finger0
+    400014: phyconut_0003:Actors:B_L_Finger01
+    400016: phyconut_0003:Actors:B_L_Finger02
+    400018: phyconut_0003:Actors:B_L_Finger1
+    400020: phyconut_0003:Actors:B_L_Finger11
+    400022: phyconut_0003:Actors:B_L_Finger12
+    400024: phyconut_0003:Actors:B_L_Finger2
+    400026: phyconut_0003:Actors:B_L_Finger21
+    400028: phyconut_0003:Actors:B_L_Finger22
+    400030: phyconut_0003:Actors:B_L_Finger3
+    400032: phyconut_0003:Actors:B_L_Finger31
+    400034: phyconut_0003:Actors:B_L_Finger32
+    400036: phyconut_0003:Actors:B_L_Finger4
+    400038: phyconut_0003:Actors:B_L_Finger41
+    400040: phyconut_0003:Actors:B_L_Finger42
+    400042: phyconut_0003:Actors:B_L_Foot
+    400044: phyconut_0003:Actors:B_L_Forearm
+    400046: phyconut_0003:Actors:B_L_ForeArmTwist
+    400048: phyconut_0003:Actors:B_L_Hand
+    400050: phyconut_0003:Actors:B_L_Thigh
+    400052: phyconut_0003:Actors:B_L_Toe0
+    400054: phyconut_0003:Actors:B_L_UpperArm
+    400056: phyconut_0003:Actors:B_Neck
+    400058: phyconut_0003:Actors:B_Pelvis
+    400060: phyconut_0003:Actors:B_R_Calf
+    400062: phyconut_0003:Actors:B_R_Clavicle
+    400064: phyconut_0003:Actors:B_R_Finger0
+    400066: phyconut_0003:Actors:B_R_Finger01
+    400068: phyconut_0003:Actors:B_R_Finger02
+    400070: phyconut_0003:Actors:B_R_Finger1
+    400072: phyconut_0003:Actors:B_R_Finger11
+    400074: phyconut_0003:Actors:B_R_Finger12
+    400076: phyconut_0003:Actors:B_R_Finger2
+    400078: phyconut_0003:Actors:B_R_Finger21
+    400080: phyconut_0003:Actors:B_R_Finger22
+    400082: phyconut_0003:Actors:B_R_Finger3
+    400084: phyconut_0003:Actors:B_R_Finger31
+    400086: phyconut_0003:Actors:B_R_Finger32
+    400088: phyconut_0003:Actors:B_R_Finger4
+    400090: phyconut_0003:Actors:B_R_Finger41
+    400092: phyconut_0003:Actors:B_R_Finger42
+    400094: phyconut_0003:Actors:B_R_Foot
+    400096: phyconut_0003:Actors:B_R_Forearm
+    400098: phyconut_0003:Actors:B_R_ForeArmTwist
+    400100: phyconut_0003:Actors:B_R_Hand
+    400102: phyconut_0003:Actors:B_R_Thigh
+    400104: phyconut_0003:Actors:B_R_Toe0
+    400106: phyconut_0003:Actors:B_R_UpperArm
+    400108: phyconut_0003:Actors:B_Spine
+    400110: phyconut_0003:Actors:B_Spine1
+    400112: phyconut_0003:Actors:B_Spine2
+    400114: phyconut_0003:Actors:Motion
+    400116: phyconut_0003:group1
+    400118: //RootNode
+    400120: pyconut24:polySurface1
+    4300000: pyconut24:polySurface1
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pyconut24:polySurface1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human:
+    - boneName: phyconut_0003:Actors:Motion
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger02
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger12
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger22
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger31
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger32
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger4
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger41
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_L_Finger42
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger02
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger12
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger22
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger31
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger32
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger4
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger41
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: phyconut_0003:Actors:B_R_Finger42
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: psychonut(Clone)
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: group
+      position: {x: 0.000000076293944, y: -0.00032679274, z: 0.008166675}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: pyconut24:polySurface1
+      position: {x: -0.000000076293944, y: 0.00032679274, z: -0.008166675}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: group1
+      position: {x: 2.0943472, y: 1.2845932, z: -0.17107241}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:group1
+      position: {x: 0.18023267, y: 0, z: 0.037861977}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:Actors:_UNKNOWN_REF_NODE_fosterParent1
+      position: {x: -2.2745798, y: -1.2845932, z: 0.13321042}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:Actors:Motion
+      position: {x: -0.0000000099258495, y: 0, z: -0.0017328988}
+      rotation: {x: -0.50000036, y: 0.4999997, z: 0.4999997, w: 0.5000003}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_Pelvis
+      position: {x: -0.0050410083, y: -0.000000016315786, z: 1.3066297}
+      rotation: {x: 0.49999967, y: -0.50000036, z: -0.4999997, w: -0.5000004}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_Spine
+      position: {x: -0.12868606, y: -0.00017150372, z: -0.0000000053875464}
+      rotation: {x: 0.0000015199184, y: -0.000000029802322, z: 0.00039738417, w: -1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_Spine1
+      position: {x: -0.2152304, y: -0.00023167043, z: -4.216225e-10}
+      rotation: {x: 0.00000007450579, y: 0, z: -0.00000010430811, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Clavicle
+      position: {x: -0.29094252, y: -0.00000010475516, z: 0.057713848}
+      rotation: {x: 0.70710677, y: 0.0002814774, z: -0.70710677, w: 0.00028156838}
+      scale: {x: 0.99999976, y: 0.99999964, z: 0.9999996}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_UpperArm
+      position: {x: -0.27917758, y: 0.000000015199184, z: 0}
+      rotation: {x: 0.029209718, y: -0.013649039, z: 0.030879134, w: 0.999003}
+      scale: {x: 0.9999995, y: 0.99999994, z: 1.0000007}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Forearm
+      position: {x: -0.37960723, y: -0.000000057220458, z: 0.00000015258789}
+      rotation: {x: -0.059106514, y: 0.0036394221, z: -0.063270286, w: 0.99623793}
+      scale: {x: 1.0000001, y: 1.0000002, z: 0.9999998}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_ForeArmTwist
+      position: {x: -0.119236715, y: -0.00000012397766, z: 0.00000015258789}
+      rotation: {x: -0.000000014901165, y: 0.000000119209275, z: 0.00000002980232,
+        w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Hand
+      position: {x: -0.2544747, y: -0.000000057220458, z: -0.00000015258789}
+      rotation: {x: 0.70666367, y: 0.01421016, z: 0.015963456, w: -0.70722675}
+      scale: {x: 0.9999998, y: 0.99999976, z: 1.0000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger0
+      position: {x: -0.129822, y: 0.00109169, z: -0.09989931}
+      rotation: {x: 0.36642072, y: -0.34437194, z: 0.16450676, w: 0.8485761}
+      scale: {x: 1.0000005, y: 0.9999999, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger01
+      position: {x: -0.061423033, y: 0, z: -0.00000020980835}
+      rotation: {x: 0.00062928314, y: 0.0003425775, z: -0.036854103, w: 0.99932045}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.99999976}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger02
+      position: {x: -0.06142326, y: 0.000000019073486, z: 0.00000022888183}
+      rotation: {x: 0.0073399898, y: 0.00017058845, z: -0.1296544, w: 0.99153215}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger1
+      position: {x: -0.1715763, y: -0.034993134, z: -0.059923038}
+      rotation: {x: -0.0003979343, y: -0.016104952, z: 0.028850297, w: 0.9994539}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger11
+      position: {x: -0.073707886, y: -0.000000038146972, z: 0.00000015258789}
+      rotation: {x: 0.0016894919, y: -0.000059785307, z: -0.036746413, w: 0.99932325}
+      scale: {x: 0.99999964, y: 0.9999998, z: 1.0000005}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger12
+      position: {x: -0.073707804, y: -0.00000017166137, z: -0.0000002479553}
+      rotation: {x: 0.00066037657, y: -0.0005308743, z: -0.13116075, w: 0.99136084}
+      scale: {x: 0.9999996, y: 1, z: 0.99999917}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger2
+      position: {x: -0.17157653, y: -0.03496109, z: -0.019497441}
+      rotation: {x: -0.00039795652, y: -0.016104598, z: 0.028850622, w: 0.9994539}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger21
+      position: {x: -0.08599235, y: 0, z: 0.000000095367426}
+      rotation: {x: 0.0016894329, y: -0.00006156785, z: -0.036742013, w: 0.99932337}
+      scale: {x: 1.0000002, y: 1.0000002, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger22
+      position: {x: -0.08599251, y: 0.00000015258789, z: -0.000000047683713}
+      rotation: {x: 0.00066007563, y: -0.000530796, z: -0.13116056, w: 0.9913608}
+      scale: {x: 0.9999995, y: 1.0000002, z: 0.99999976}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger3
+      position: {x: -0.17157638, y: -0.0349287, z: 0.020928191}
+      rotation: {x: -0.0003985104, y: -0.016104361, z: 0.028850509, w: 0.99945396}
+      scale: {x: 1.0000004, y: 1, z: 1.0000004}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger31
+      position: {x: -0.073707886, y: 0.00000015258789, z: 0}
+      rotation: {x: 0.0016890104, y: -0.00006227006, z: -0.036743764, w: 0.9993233}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger32
+      position: {x: -0.073707655, y: 0.00000020980835, z: 0.000000038146972}
+      rotation: {x: 0.0006601277, y: -0.00053053704, z: -0.13116077, w: 0.9913607}
+      scale: {x: 0.9999997, y: 0.9999997, z: 0.99999976}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger4
+      position: {x: -0.17157638, y: -0.03489662, z: 0.061353847}
+      rotation: {x: -0.00039944053, y: -0.01610566, z: 0.028853165, w: 0.99945384}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000006}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger41
+      position: {x: -0.06142326, y: 0.00000022888183, z: 0.00000012397766}
+      rotation: {x: 0.0016892402, y: -0.00005986724, z: -0.03675044, w: 0.999323}
+      scale: {x: 0.9999994, y: 0.99999994, z: 0.9999994}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Finger42
+      position: {x: -0.061423108, y: -0.00000020980835, z: -0.0000002002716}
+      rotation: {x: 0.0006601791, y: -0.0005304217, z: -0.1311604, w: 0.99136084}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999964}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Clavicle
+      position: {x: -0.29094252, y: 0.00000010505318, z: -0.057713855}
+      rotation: {x: -0.70710677, y: -0.0002815127, z: -0.70710677, w: 0.0002814233}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.99999976}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_UpperArm
+      position: {x: -0.2791774, y: 0.0000001230836, z: -0.00000015258789}
+      rotation: {x: 0.22416268, y: -0.036907744, z: 0.014970633, w: -0.9737376}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Forearm
+      position: {x: -0.37960723, y: 0.000000038146972, z: 0.00000019073485}
+      rotation: {x: -0.00011920919, y: -0.005594875, z: -0.017404493, w: 0.99983287}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000004}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_ForeArmTwist
+      position: {x: -0.119236715, y: -0.0000001001358, z: 0}
+      rotation: {x: 0.000000048428788, y: -0.000000014901163, z: 0.000000013038518,
+        w: 1}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.9999998}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Hand
+      position: {x: -0.25447485, y: -0.000000057220458, z: -0.00000022888183}
+      rotation: {x: -0.706825, y: -0.00000007636842, z: 0.000000014901156, w: -0.70738846}
+      scale: {x: 1.0000004, y: 0.99999964, z: 1.0000002}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger0
+      position: {x: -0.129822, y: 0.00109169, z: 0.09989943}
+      rotation: {x: -0.35142434, y: 0.26398307, z: 0.32623693, w: 0.83688915}
+      scale: {x: 1.0000004, y: 0.99999976, z: 0.99999976}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger01
+      position: {x: -0.06142326, y: -0.000000114440915, z: 0.000000076293944}
+      rotation: {x: -0.001361488, y: 0.00018477422, z: -0.037238218, w: 0.9993055}
+      scale: {x: 0.99999976, y: 0.99999976, z: 1.0000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger02
+      position: {x: -0.061423108, y: 0.000000057220458, z: 0.0000002670288}
+      rotation: {x: -0.0037104469, y: 0.0012578921, z: -0.12428462, w: 0.99223894}
+      scale: {x: 1.0000008, y: 1.0000002, z: 1.0000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger1
+      position: {x: -0.17157646, y: -0.034993093, z: 0.059923045}
+      rotation: {x: 0.000398114, y: 0.01610393, z: 0.028849352, w: 0.999454}
+      scale: {x: 0.9999999, y: 1.0000005, z: 1.0000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger11
+      position: {x: -0.07370773, y: 0, z: 0.000000076293944}
+      rotation: {x: -0.004623186, y: 0.00017289244, z: -0.037181184, w: 0.99929786}
+      scale: {x: 1.0000006, y: 1, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger12
+      position: {x: -0.07370773, y: -0.000000057220458, z: -0.000000114440915}
+      rotation: {x: -0.007259439, y: 0.002073041, z: -0.12511255, w: 0.9921139}
+      scale: {x: 0.9999997, y: 0.99999964, z: 0.9999997}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger2
+      position: {x: -0.1715766, y: -0.034960784, z: 0.019497499}
+      rotation: {x: 0.00039790533, y: 0.016104631, z: 0.028848656, w: 0.99945396}
+      scale: {x: 1.0000002, y: 1.0000005, z: 0.9999998}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger21
+      position: {x: -0.08599235, y: -0.000000114440915, z: -0.00000030517577}
+      rotation: {x: -0.0046232766, y: 0.00016954812, z: -0.03717962, w: 0.999298}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger22
+      position: {x: -0.08599243, y: -0.000000019073486, z: 0.0000002670288}
+      rotation: {x: -0.007259603, y: 0.0020732048, z: -0.12511249, w: 0.9921138}
+      scale: {x: 1, y: 0.99999964, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger3
+      position: {x: -0.17157677, y: -0.034928665, z: -0.020928307}
+      rotation: {x: 0.0003980395, y: 0.016103966, z: 0.028848866, w: 0.999454}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000005}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger31
+      position: {x: -0.073707506, y: -0.000000076293944, z: 0}
+      rotation: {x: -0.0046233945, y: 0.00017342143, z: -0.037183248, w: 0.9992978}
+      scale: {x: 1, y: 1, z: 1.0000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger32
+      position: {x: -0.073707886, y: -0.00000019073485, z: -0.00000017166137}
+      rotation: {x: -0.0072592166, y: 0.0020731306, z: -0.12511247, w: 0.9921139}
+      scale: {x: 1.0000002, y: 1, z: 1.0000004}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger4
+      position: {x: -0.17157677, y: -0.03489704, z: -0.061354097}
+      rotation: {x: 0.00039844183, y: 0.016103033, z: 0.028848452, w: 0.9994541}
+      scale: {x: 1.0000004, y: 1.0000013, z: 1.0000011}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger41
+      position: {x: -0.061422653, y: 0.000000114440915, z: 0.00000031948088}
+      rotation: {x: -0.0046231407, y: 0.0001747085, z: -0.037181918, w: 0.99929786}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Finger42
+      position: {x: -0.061423566, y: 0.0000001335144, z: -0.000000095367426}
+      rotation: {x: -0.0072595286, y: 0.0020731005, z: -0.12511249, w: 0.9921139}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_Neck
+      position: {x: -0.29094252, y: -0.00010208949, z: -1.857954e-10}
+      rotation: {x: -0.00000053644175, y: 0, z: -0.00000004470348, w: 1}
+      scale: {x: 0.9999997, y: 0.9999998, z: 0.9999995}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_Head
+      position: {x: -0.12820907, y: -0.000000020861625, z: 2.842171e-16}
+      rotation: {x: -0.000000029802319, y: 0.000000119209275, z: -0.00039881462, w: -1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000005}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_Spine2
+      position: {x: -0.15028426, y: -0.00017994046, z: -0.00000015291542}
+      rotation: {x: -0.000074848525, y: 0, z: 0.000000014901159, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Thigh
+      position: {x: -0, y: 0.00000026673078, z: 0.15105617}
+      rotation: {x: -0.040325303, y: 0.9891645, z: -0.002608388, w: 0.14114057}
+      scale: {x: 0.9999999, y: 1, z: 1.0000004}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Calf
+      position: {x: -0.5595049, y: 0.000000009536743, z: 0.000000038146972}
+      rotation: {x: -0.000000014901159, y: 0.000000029802319, z: 0.000000029802319,
+        w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 0.9999999}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Foot
+      position: {x: -0.5595047, y: -0.000000009536743, z: -0.000000028610229}
+      rotation: {x: -0.000000014901158, y: -0.02393935, z: -0.008261649, w: 0.9996793}
+      scale: {x: 0.99999964, y: 0.99999964, z: 1.0000001}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_L_Toe0
+      position: {x: -0.1708812, y: 0.25053582, z: 0}
+      rotation: {x: 0.000000014901159, y: -0.00000004470348, z: -0.0000000745058,
+        w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Thigh
+      position: {x: -0, y: -0.00000015109777, z: -0.15105617}
+      rotation: {x: -0.026607241, y: 0.98841524, z: -0.04558265, w: -0.1423017}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000002}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Calf
+      position: {x: -0.55950487, y: 0.000000009536743, z: 0.000000019073486}
+      rotation: {x: -0.022101132, y: 0.008784636, z: 0.10685347, w: 0.9939903}
+      scale: {x: 1.0000002, y: 1.0000004, z: 0.99999994}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Foot
+      position: {x: -0.55950487, y: -0.0000000011920929, z: 0.000000028610229}
+      rotation: {x: 0.014107879, y: 0.08356983, z: -0.068186805, w: 0.99406624}
+      scale: {x: 0.99999994, y: 0.9999997, z: 1.0000002}
+      transformModified: 1
+    - name: phyconut_0003:Actors:B_R_Toe0
+      position: {x: -0.17088115, y: 0.25053588, z: -0.000000009536743}
+      rotation: {x: -0.00000008940697, y: 0.000000067055225, z: -0.7071068, w: 0.7071068}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+      transformModified: 1
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
