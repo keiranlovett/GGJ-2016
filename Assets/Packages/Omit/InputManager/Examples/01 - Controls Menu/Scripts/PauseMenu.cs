@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace TeamUtility.IO.Examples
 {
-	public class PauseMenu : MonoBehaviour
+	public class PauseMenu : MonoBehaviour 
 	{
 		[SerializeField] private Canvas m_canvas;
 		[SerializeField] private GameObject m_mainPage;
@@ -27,7 +27,6 @@ namespace TeamUtility.IO.Examples
 		{
 			if(InputManager.GetButtonDown("PauseMenu"))
 			{
-				Debug.Log("OPEN");
 				if(!m_isOpen)
 					Open();
 			}
@@ -91,7 +90,7 @@ namespace TeamUtility.IO.Examples
 #if UNITY_EDITOR
 			UnityEditor.EditorApplication.isPlaying = false;
 #else
-			Application.LoadLevel(0);
+			Application.Quit();
 #endif
 		}
 	}

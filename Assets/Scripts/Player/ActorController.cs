@@ -147,7 +147,7 @@ public class ActorController : MonoBehaviour {
 				//set that character is moving
 				animator.SetBool("Moving", true);
 				isMoving = true;
-				if (InputManager.GetKey(KeyCode.LeftShift) || InputManager.GetAxisRaw("TargetBlock") > .1){  //if strafing
+				if (Input.GetKey(KeyCode.LeftShift)){  //if strafing
 					isStrafing = true;
 					animator.SetBool("Running", false);
 				}

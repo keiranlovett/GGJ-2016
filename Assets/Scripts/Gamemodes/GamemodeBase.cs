@@ -82,7 +82,7 @@ float ActorScore = Actors[i].gameObject.transform.GetChild(1).gameObject.GetComp
 		 particle.GetComponent<ParticleSystem>().enableEmission = true;
 
 		yield return new WaitForSeconds(10f);
-		LoadNextMap();
+		//LoadNextMap();
 	}
 
 	/// <summary>

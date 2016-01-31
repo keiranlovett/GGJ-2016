@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace TeamUtility.IO.Examples
 {
-	public class LoadInputsOnStart : MonoBehaviour
+	public class LoadInputsOnStart : MonoBehaviour 
 	{
 		[SerializeField] private int m_exampleID;
 
@@ -15,8 +15,6 @@ namespace TeamUtility.IO.Examples
 				InputLoaderXML loader = new InputLoaderXML(savePath);
 				InputManager.Load(loader);
 			}
-
-			Debug.Log(savePath);
 		}
 	}
 }
