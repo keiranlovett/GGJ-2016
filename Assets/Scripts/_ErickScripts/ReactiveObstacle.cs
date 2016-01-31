@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ReactiveObstacle : MonoBehaviour
-{
+public class ReactiveObstacle : MonoBehaviour {
 
     public float applyForce;
     BodyPhysicsController bpController;
@@ -22,20 +21,18 @@ public class ReactiveObstacle : MonoBehaviour
     float blndWeight;
 
     // Use this for initialization
-    void Start()
-    {
+    void Start () {
         JellySMR = GetComponent<SkinnedMeshRenderer>();
         isJiggling = false;
         audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        //if(isJiggling) JiggleJelly();
+    void Update () {
+        if(isJiggling) JiggleJelly();
     }
 
-    void OnCollisionEnter(Collision coll)
+    void OnCollisionEnter (Collision coll)
     {
         Rigidbody hitRigidbody;
         GameObject hitGameObject;
@@ -49,11 +46,11 @@ public class ReactiveObstacle : MonoBehaviour
             hitRigidbody = hitGameObject.GetComponent<Rigidbody>();
             bpController.m_currOffBalance = bpController.m_balance * 1.2f;
             hitRigidbody.AddForce(hitGameObject.transform.forward * -1 * applyForce);
-            RandomJiggleTarget(100, 100);
+            RandomJiggleTarget(100, 75, 35, 0);
         }
     }
 
-    void RandomJiggleTarget(float positive1, float positive2)
+    void RandomJiggleTarget(float positive1, float positive2, float negative1, float negative2)
     {
         audio.pitch = Random.Range(0.7f, 1.2f);
         audio.Play();
@@ -62,23 +59,31 @@ public class ReactiveObstacle : MonoBehaviour
         {
             jigglePositive1 = positive1;
             jigglePositive2 = positive2;
+            jiggleNegative1 = negative1;
+            jiggleNegative2 = negative2;
             currentJiggleTarget = 1;
             jiggleProgress = 0;
             isJiggling = true;
         }
 
+        if (isJiggling)
+        {
+            jigglePositive1 = positive1;
+            jigglePositive2 = positive2;
+            jiggleNegative1 = negative1;
+            jiggleNegative2 = negative2;
+        }
     }
 
-    void JiggleJelly()
+    void JiggleJelly ()
     {
-        switch (currentJiggleTarget)
+        switch(currentJiggleTarget)
         {
             case 1:
-                if (jiggleProgress < 1)
+                if(jiggleProgress < 1)
                 {
                     jiggleProgress += jiggleSpeed * Time.deltaTime;
                     blndWeight = Mathf.Lerp(0f, jigglePositive1, jiggleProgress);    //we start from zero
-                    JellySMR.SetBlendShapeWeight(0, blndWeight);
                 }
                 else if (jiggleProgress >= 1)   //reset for next case
                 {
@@ -90,8 +95,7 @@ public class ReactiveObstacle : MonoBehaviour
                 if (jiggleProgress < 1)
                 {
                     jiggleProgress += jiggleSpeed * Time.deltaTime;
-                    blndWeight = Mathf.Lerp(jigglePositive1, 0, jiggleProgress);    //..to the first negative position
-                    JellySMR.SetBlendShapeWeight(0, blndWeight);
+                    blndWeight = Mathf.Lerp(jigglePositive1, jiggleNegative1, jiggleProgress);    //..to the first negative position
                 }
                 else if (jiggleProgress >= 1)   //reset for next case
                 {
@@ -103,8 +107,7 @@ public class ReactiveObstacle : MonoBehaviour
                 if (jiggleProgress < 1)
                 {
                     jiggleProgress += jiggleSpeed * Time.deltaTime;
-                    blndWeight = Mathf.Lerp(0, jigglePositive2, jiggleProgress);    //..to the second positive
-                    JellySMR.SetBlendShapeWeight(1, blndWeight);
+                    blndWeight = Mathf.Lerp(jiggleNegative1, jigglePositive2, jiggleProgress);    //..to the second positive
                 }
                 else if (jiggleProgress >= 1)   //reset for next case
                 {
@@ -116,7 +119,19 @@ public class ReactiveObstacle : MonoBehaviour
                 if (jiggleProgress < 1)
                 {
                     jiggleProgress += jiggleSpeed * Time.deltaTime;
-                    blndWeight = Mathf.Lerp(jigglePositive2, 0, jiggleProgress);    //..to the second negative position
+                    blndWeight = Mathf.Lerp(jigglePositive2, jiggleNegative2, jiggleProgress);    //..to the second negative position
+                }
+                else if (jiggleProgress >= 1)   //reset for next case
+                {
+                    currentJiggleTarget++;
+                    jiggleProgress = 0;
+                }
+                break;
+            case 5:
+                if (jiggleProgress < 1)
+                {
+                    jiggleProgress += jiggleSpeed * Time.deltaTime;
+                    blndWeight = Mathf.Lerp(jiggleNegative2, 0, jiggleProgress);    //..back to zero
                 }
                 else if (jiggleProgress >= 1)   //reset for next case
                 {
@@ -130,5 +145,10 @@ public class ReactiveObstacle : MonoBehaviour
                 isJiggling = false;
                 break;
         }
+
+        JellySMR.SetBlendShapeWeight(0, blndWeight);
+        JellySMR.SetBlendShapeWeight(1, blndWeight);
+
+
     }
 }
